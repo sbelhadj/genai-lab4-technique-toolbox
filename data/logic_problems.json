@@ -1,0 +1,24 @@
+{
+  "problems": [
+    {"id": 1, "text": "A bakery sold 45 muffins in the morning and 32 in the afternoon. How many muffins were sold in total?", "correct_answer": "77", "difficulty": "easy"},
+    {"id": 2, "text": "A train travels at 60 km/h for 2.5 hours. How far does it travel in kilometers?", "correct_answer": "150", "difficulty": "easy"},
+    {"id": 3, "text": "If 8 programmers can complete a project in 15 days, how many days would it take 12 programmers?", "correct_answer": "10", "difficulty": "medium"},
+    {"id": 4, "text": "A store offers 20% off a $85 item. What is the sale price in dollars?", "correct_answer": "68", "difficulty": "easy"},
+    {"id": 5, "text": "Three servers handle requests. Server A handles 40%, Server B handles 35%, and Server C handles the rest. If 2000 requests came in, how many did Server C handle?", "correct_answer": "500", "difficulty": "medium"},
+    {"id": 6, "text": "A sprint has 10 story points. The team completes 3 stories worth 2, 3, and 4 points. How many points remain?", "correct_answer": "1", "difficulty": "easy"},
+    {"id": 7, "text": "A function runs in O(n^2) time. If n=10 takes 5ms, approximately how long would n=20 take in ms?", "correct_answer": "20", "difficulty": "medium"},
+    {"id": 8, "text": "A binary search on a sorted array of 1024 elements requires at most how many comparisons?", "correct_answer": "10", "difficulty": "medium"},
+    {"id": 9, "text": "A company has 120 employees. 75% are developers, and 20% of developers are senior. How many senior developers are there?", "correct_answer": "18", "difficulty": "medium"},
+    {"id": 10, "text": "A CI/CD pipeline has 4 stages. Each stage has a 95% success rate (independent). What is the probability that the entire pipeline succeeds? Give as a percentage rounded to the nearest integer.", "correct_answer": "81", "difficulty": "hard"},
+    {"id": 11, "text": "Alice has twice as many tasks as Bob. Carol has 5 more tasks than Alice. If Bob has 8 tasks, how many tasks does Carol have?", "correct_answer": "21", "difficulty": "medium"},
+    {"id": 12, "text": "A database query takes 200ms. Adding an index reduces query time by 75%. What is the new query time in ms?", "correct_answer": "50", "difficulty": "easy"},
+    {"id": 13, "text": "A team velocity averages 30 story points per sprint. They have 180 points of work remaining. How many sprints are needed?", "correct_answer": "6", "difficulty": "easy"},
+    {"id": 14, "text": "Three APIs return results in 120ms, 80ms, and 200ms. If called in parallel, what is the total response time in ms?", "correct_answer": "200", "difficulty": "medium"},
+    {"id": 15, "text": "A cache has a 90% hit rate. Of 500 requests, how many result in a cache miss?", "correct_answer": "50", "difficulty": "easy"},
+    {"id": 16, "text": "A linked list has 7 nodes. How many pointers need to be updated to reverse it completely?", "correct_answer": "7", "difficulty": "medium"},
+    {"id": 17, "text": "A meeting room seats 12 people. 3 teams of 4 want to meet. How many separate meeting sessions are needed if only one team can meet at a time?", "correct_answer": "3", "difficulty": "easy"},
+    {"id": 18, "text": "If a recursive function makes 2 calls per invocation and the base case is at depth 5, how many total function calls are made (including the initial call)?", "correct_answer": "63", "difficulty": "hard"},
+    {"id": 19, "text": "An API rate limit allows 100 requests per minute. A batch job needs to make 450 requests. What is the minimum time in minutes needed?", "correct_answer": "5", "difficulty": "medium"},
+    {"id": 20, "text": "A hash table has 16 buckets and 12 entries. Assuming uniform distribution, what is the load factor?", "correct_answer": "0.75", "difficulty": "medium"}
+  ]
+}

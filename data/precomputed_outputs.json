@@ -1,0 +1,64 @@
+{
+  "_comment": "Pre-computed outputs for Lab 4. Use if Ollama unavailable.",
+
+  "structured_output_sprint": {
+    "freeform_sample_outputs": [
+      "The user story breaks down as follows:\n\n- **Actor**: Project manager\n- **Action**: Assign tasks to team members\n- **Goal**: Ensure work is distributed evenly across the team\n\nThis is a standard management-level user story focused on resource allocation.",
+      "Actor: developer\nAction: filter tasks by status and priority\nGoal: to focus on what matters most",
+      "{\"actor\": \"admin\", \"action\": \"export project data to CSV\", \"goal\": \"share reports with stakeholders\"}",
+      "The QA engineer wants to link test cases to tasks. The goal is tracking test coverage per feature.",
+      "From this user story:\n1. Who: team lead\n2. What: create task templates\n3. Why: faster sprint setup"
+    ],
+    "format_constrained_sample_outputs": [
+      "{\"actor\": \"project manager\", \"action\": \"assign tasks to team members\", \"goal\": \"work is distributed evenly\"}",
+      "{\"actor\": \"developer\", \"action\": \"filter tasks by status and priority\", \"goal\": \"focus on what matters most\"}",
+      "{\"actor\": \"admin\", \"action\": \"export project data to CSV\", \"goal\": \"share reports with stakeholders\"}",
+      "{\"actor\": \"QA engineer\", \"action\": \"link test cases to tasks\", \"goal\": \"test coverage is tracked per feature\"}",
+      "{\"actor\": \"team lead\", \"action\": \"create task templates for recurring workflows\", \"goal\": \"sprint setup is faster\"}"
+    ],
+    "fewshot_sample_outputs": [
+      "{\"actor\": \"project manager\", \"action\": \"assign tasks to team members\", \"goal\": \"work is distributed evenly\"}",
+      "{\"actor\": \"developer\", \"action\": \"filter tasks by status and priority\", \"goal\": \"focus on what matters most\"}",
+      "{\"actor\": \"admin\", \"action\": \"export project data to CSV\", \"goal\": \"share reports with stakeholders\"}",
+      "{\"actor\": \"QA engineer\", \"action\": \"link test cases to tasks\", \"goal\": \"test coverage is tracked per feature\"}",
+      "{\"actor\": \"team lead\", \"action\": \"create task templates for recurring workflows\", \"goal\": \"sprint setup is faster\"}",
+      "{\"actor\": \"user\", \"action\": \"drag and drop tasks between columns on the board\", \"goal\": \"reorganize task status visually\"}",
+      "{\"actor\": \"system\", \"action\": \"send email notifications when a task is overdue\", \"goal\": \"alert users about missed deadlines\"}",
+      "{\"actor\": \"product owner\", \"action\": \"set sprint goals and track velocity over time\", \"goal\": \"forecast delivery dates and communicate progress\"}",
+      "{\"actor\": \"new hire\", \"action\": \"get an onboarding checklist that auto-assigns tasks\", \"goal\": \"know what to complete in first week\"}",
+      "{\"actor\": \"user\", \"action\": \"enable dark mode\", \"goal\": \"reduce eye strain\"}",
+      "{\"actor\": \"developer and code reviewer\", \"action\": \"add comments to tasks and tag colleagues\", \"goal\": \"discussions are centralized and searchable\"}",
+      "{\"actor\": \"user\", \"action\": \"integrate TaskFlow with Slack, GitHub, and Jira\", \"goal\": \"sync notifications and updates across tools\"}",
+      "{\"actor\": \"security auditor\", \"action\": \"view audit log of task modifications\", \"goal\": \"compliance requirements are met\"}",
+      "{\"actor\": \"user\", \"action\": \"improve search functionality\", \"goal\": \"find tasks more easily\"}",
+      "{\"actor\": \"remote team member\", \"action\": \"set availability hours and adjust notifications to local time\", \"goal\": \"receive alerts during working hours\"}"
+    ],
+    "compliance_rates": {"freeform": 0.20, "format_constrained": 0.80, "fewshot": 0.93}
+  },
+
+  "self_consistency": {
+    "sample_results_n5": [
+      {"problem_id": 1, "correct": "77", "single": "77", "consensus": "77", "single_correct": true, "consensus_correct": true, "all": ["77","77","77","77","77"]},
+      {"problem_id": 2, "correct": "150", "single": "150", "consensus": "150", "single_correct": true, "consensus_correct": true, "all": ["150","150","150","150","150"]},
+      {"problem_id": 3, "correct": "10", "single": "10", "consensus": "10", "single_correct": true, "consensus_correct": true, "all": ["10","10","12","10","10"]},
+      {"problem_id": 4, "correct": "68", "single": "68", "consensus": "68", "single_correct": true, "consensus_correct": true, "all": ["68","68","68","68","68"]},
+      {"problem_id": 5, "correct": "500", "single": "500", "consensus": "500", "single_correct": true, "consensus_correct": true, "all": ["500","500","500","500","500"]},
+      {"problem_id": 6, "correct": "1", "single": "1", "consensus": "1", "single_correct": true, "consensus_correct": true, "all": ["1","1","1","1","1"]},
+      {"problem_id": 7, "correct": "20", "single": "20", "consensus": "20", "single_correct": true, "consensus_correct": true, "all": ["20","20","20","40","20"]},
+      {"problem_id": 8, "correct": "10", "single": "11", "consensus": "10", "single_correct": false, "consensus_correct": true, "all": ["11","10","10","10","11"]},
+      {"problem_id": 9, "correct": "18", "single": "18", "consensus": "18", "single_correct": true, "consensus_correct": true, "all": ["18","18","18","24","18"]},
+      {"problem_id": 10, "correct": "81", "single": "86", "consensus": "81", "single_correct": false, "consensus_correct": true, "all": ["86","81","81","81","85"]},
+      {"problem_id": 11, "correct": "21", "single": "21", "consensus": "21", "single_correct": true, "consensus_correct": true, "all": ["21","21","21","21","21"]},
+      {"problem_id": 12, "correct": "50", "single": "50", "consensus": "50", "single_correct": true, "consensus_correct": true, "all": ["50","50","50","50","50"]},
+      {"problem_id": 13, "correct": "6", "single": "6", "consensus": "6", "single_correct": true, "consensus_correct": true, "all": ["6","6","6","6","6"]},
+      {"problem_id": 14, "correct": "200", "single": "400", "consensus": "200", "single_correct": false, "consensus_correct": true, "all": ["400","200","200","200","400"]},
+      {"problem_id": 15, "correct": "50", "single": "50", "consensus": "50", "single_correct": true, "consensus_correct": true, "all": ["50","50","50","50","50"]},
+      {"problem_id": 16, "correct": "7", "single": "6", "consensus": "7", "single_correct": false, "consensus_correct": true, "all": ["6","7","7","7","6"]},
+      {"problem_id": 17, "correct": "3", "single": "3", "consensus": "3", "single_correct": true, "consensus_correct": true, "all": ["3","3","3","3","3"]},
+      {"problem_id": 18, "correct": "63", "single": "31", "consensus": "63", "single_correct": false, "consensus_correct": true, "all": ["31","63","63","63","31"]},
+      {"problem_id": 19, "correct": "5", "single": "5", "consensus": "5", "single_correct": true, "consensus_correct": true, "all": ["5","5","5","4","5"]},
+      {"problem_id": 20, "correct": "0.75", "single": "0.75", "consensus": "0.75", "single_correct": true, "consensus_correct": true, "all": ["0.75","0.75","0.75","0.75","0.75"]}
+    ],
+    "summary": {"single_accuracy": 0.75, "consistency_accuracy_n5": 0.95}
+  }
+}

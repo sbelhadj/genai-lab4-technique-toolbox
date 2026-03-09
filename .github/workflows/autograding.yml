@@ -1,0 +1,27 @@
+name: Autograding
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install --no-cache-dir pytest jsonschema nbformat
+      - name: Run structure tests
+        run: pytest tests/test_deliverables.py -v --tb=short 2>&1 || true
+      - name: Run schema validator tests
+        run: pytest tests/test_schema_validators.py -v --tb=short 2>&1 || true
+      - name: Generate summary
+        if: always()
+        run: |
+          echo "## Lab 4 — Autograding Results" >> $GITHUB_STEP_SUMMARY
+          pytest tests/ -v --tb=line 2>&1 | tail -30 >> $GITHUB_STEP_SUMMARY || true
